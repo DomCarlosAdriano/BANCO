@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BANCO</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrap">
+        <!-- Header -->
+        <div>
+          <h1 id="nome">Carlos Adriano</h1>
+        </div>
+        <!-- Header - end -->
+        <div class="valorEimg">
+          <img
+            src="https://github.com/DomCarlosAdriano.png"
+            alt="Foto do perfil"
+          />
+          <div id="cash">
+            <h1 class="dinheiro">R$ 0,00</h1>
+          </div>
+        </div>
+
+        <!-- Form -->
+
+        <form onsubmit="handleSubmit(event)">
+          <input id="money" type="number" placeholder="Informe um valor" />
+          <button onclick="depositar()" type="submit">Depositar</button>
+          <button onclick="retirar()" type="submit">Sacar</button>
+        </form>
+
+        <!-- Form - end -->
+        <div class="caixa-nota">
+          <div class="text"><h3>ESTRATO</h3></div>
+          <div id="estrato"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
